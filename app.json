@@ -1,4 +1,6 @@
 {
+  "name": "NeoReactNativeWallet",
+  "displayName": "Neo Mobile Wallet",
   "expo": {
     "sdkVersion": "18.0.0"
   }
