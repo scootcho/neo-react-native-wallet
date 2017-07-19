@@ -1,3 +1,5 @@
+global.Buffer = global.Buffer || require('buffer').Buffer;
+
 const ab2str = buf => { return String.fromCharCode.apply(null, new Uint8Array(buf)); }
 
 const str2ab = str => {

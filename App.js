@@ -1,15 +1,17 @@
-import React, { Component } from 'react';
+import React from 'react';
+import { AppRegistry } from 'react-native';
 import { Provider } from 'react-redux';
-import Root from './app/containers/Root';
-import store from './app/store/configureStore';
+import { StyleSheet } from 'react-native';
+import Wallet from './src/containers/Wallet';
+import store from './src/store/store';
+import './shim'
 
-global.Buffer = global.Buffer || require('buffer').Buffer;
 
 export default class App extends React.Component {
   render() {
     return (
       <Provider store={store}>
-        <Root />
+        <Wallet />
       </Provider>
     );
   }
